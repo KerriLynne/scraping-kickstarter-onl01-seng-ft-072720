@@ -25,6 +25,11 @@ def create_project_hash #  can be called on with no errors /returns a hash /incl
       :percent_funded => project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
     }
   end
+  #  ^^^ project titles point to a hash of info
+  # each project has an image link hosted on AmazonAWS
+  # each project has a description which is a string
+  # each project has a location which is a string
+
 
    # return the projects hash
   projects
