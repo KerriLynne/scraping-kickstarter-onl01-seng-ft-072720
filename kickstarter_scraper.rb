@@ -29,6 +29,7 @@ def create_project_hash #  can be called on with no errors /returns a hash /incl
   # each project has an image link hosted on AmazonAWS
   # each project has a description which is a string
   # each project has a location which is a string
+  # each project has percentage funded listed which is an integer
 
 
    # return the projects hash
