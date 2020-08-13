@@ -9,7 +9,7 @@ require "pry"
 # percent_funded: project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
 
 
-def create_project_hash
+def create_project_hash #  can be called on with no errors /returns a hash /includes at least five projects
   html = File.read('fixtures/kickstarter.html')
   kickstarter = Nokogiri::HTML(html)
 
